@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        /* Navber */
+        
+        .img {
+            width: 100px;
+        }
+        
+        .img img {
+            width: 100%;
+        }
+        
+        .navbar {
+            margin-bottom: 0;
+            background-color: #76f8e7;
+            z-index: 9999;
+            border: 0;
+            font-size: 20px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 2px;
+            border-radius: 0;
+        }
+        
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #fff !important;
+        }
+        
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            color: #f4511e !important;
+            background-color: rgb(12, 9, 11) !important;
+        }
+        
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+        /* carousel */
+        
+        .carousel-item img {
+            height: 500px !important;
+        }
+        /* company page */
+        
+        .logo {
+            font-size: 200px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .col-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+        }
+        
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+        .contact .php-email-form button[type="submit"] {
+    background: #47b2e4;
+    border: 0;
+    padding: 12px 34px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- navber -->
+    <div class="continer">
+        <div class="row">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-info p-0">
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <div class="container-fluid">
+
+                            <a class="navbar-brand img" href="#"><img src="banner/logo2.png" alt=""></a>
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                            <div class="collapse navbar-collapse d.flex justify-content-end " id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-primary" aria-current="page" href="#HOME">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-primary" href="#SERVICES">SERVICES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-primary " href="#Portfolio">PORTFLIO</a>
+                                    </li>
+                                    <li class="nav-item">
+
+                                        <a class="nav-link active text-primary" href="TEAM.html">TEAM-SKILL</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-primary" href="contact.html">CONTACT</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- carousel slide -->
+    <div class="container-fluid" id="HOME">
+        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="icon//banner-1.jpg" class="d-block w-100 h-150" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="icon//banner-2.jpg" class="d-block w-100 h-150" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="7000">
+                        <img src="icon//banner-3.jpg" class="d-block w-100 h-150" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Company Page -->
+    <div class="container-fluid jumbotron">
+        <div class="row p-5">
+            <div class="col-8">
+                <h2 class="pb-5">About Company Page</h2>
+
+                <h4 class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <button class="btn btn-primary btn-lg">Get in Touch</button>
+            </div>
+            <div class="col-4">
+                <img src="banner/logo.png" alt="" class="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-light ">
+        <div class="row p-5">
+            <div class="col-4 ">
+                <img src="img/graphic-01-free-img.png" alt="" class="center">
+            </div>
+            <div class="col-8">
+                <h2 class="pb-5">Our Values</h2>
+                <h5 class="pb-3"><strong>MISSION:</strong>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. </h5>
+                <p><b>VISION:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab at ipsa culpa in et omnis, nostrum sint quos praesentium autem eligendi deserunt consequatur, ex soluta recusandae facere fuga, optio non ea cum natus. Consequatur
+                    suscipit reiciendis minus amet recusandae, debitis, iusto nobis sunt unde iure doloribus nisi dolores nam, doloremque optio consequuntur obcaecati voluptate perspiciatis ratione? Voluptatum expedita, maxime accusamus magnam mollitia
+                    nam eveniet itaque rem nesciunt qui repellat soluta, ad quaerat, nemo illum. Commodi suscipit distinctio animi. Deleniti aut cumque quod aliquam excepturi cum vitae nulla eveniet voluptatibus dolor aliquid iure nostrum, fugiat maxime
+                    dolore eos error, soluta enim!</p>
+                <i class="fas fa-phone-square fs-1 text-info"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="container-fluid text-center p-5" id="SERVICES">
+        <h2 class="pb-2">SERVICES</h2>
+        <h4 class="pb-4">What we offer</h4>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <img src="icon/power.png" alt="">
+                <h3>POWER</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis doloribus laudantium sint iste eaque ut repellat in tenetur tempora facere!</p>
+            </div>
+            <div class="col-4">
+                <img src="icon/love.png" alt="">
+                <h3>LOVE</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore nisi nemo maxime mollitia tempora doloremque quia hic quod harum ut.</p>
+
+            </div>
+            <div class="col-4">
+                <img src="icon/job.png" alt="">
+                <h3>JOB DONE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sapiente blanditiis dignissimos maiores nulla iure provident, facere consequuntur nihil quia!</p>
+
+            </div>
+
+        </div>
+        <br><br>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="icon/green.png" alt="">
+                <h3>GREEN</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, earum. Non eius tempore corrupti suscipit nam nemo laborum! Consequuntur, commodi.</p>
+
+
+            </div>
+            <div class="col-4">
+                <img src="icon/certififd.png" alt="">
+                <h3>CERTIFIED</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, molestias voluptatem! Vel dolore consectetur animi expedita fuga asperiores libero dicta!</p>
+
+            </div>
+            <div class="col-4">
+                <img src="icon/hard.png" alt="">
+                <h3>HARD WORK</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur tenetur sit omnis neque inventore necessitatibus rem aspernatur quod voluptatem. Id?</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div class="container-fluid bg-light" id="Portfolio">
+
+
+        <div class="row p-5">
+            <h2 class="text-center pb-4">Portfolio</h2>
+            <h4 class="text-center pb-3">What we have created</h4>
+            <div class="col-4 text-center">
+                <div class="card ">
+                    <img src="icon/card-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>TEXT</h4>
+
+
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 text-center">
+                <div class="card ">
+                    <img src="icon/card-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>NEWS</h4>
+
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 text-center ">
+                <div class="card ">
+                    <img src="icon/card-3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>STAY</h4>
+
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Team section -->
+    <section>
+        <div class="container-fluid text-center bg-light">
+
+
+            <div class="row text-center">
+                <h2 class="text-info p-3">TEAM</h2>
+
+                <div class="container marketing">
+
+                    <!-- Three columns of text below the carousel -->
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="icon/team-3.jpg" class="bd-placeholder-img rounded-circle" alt="" width="160" height="160">
+                            <h2>May Makin</h2>
+                           
+                            <h6> Chief Executive Officer</h6>
+                               
+                            <p><a class="text-secondary" href="#"><i class="fab fa-facebook-f fs-5"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-whatsapp-square fs-5"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-twitter-square fs-5 "></i></a></p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                            <img src="icon/team-2.jpg" class="bd-placeholder-img rounded-circle" alt="" width="160" height="160">
+                            <h2>William Anderson</h2>
+                            <h6>CTO</h6>
+                            <p><a class="text-secondary" href="#"><i class="fab fa-facebook-f fs-5"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-whatsapp-square fs-5"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-twitter-square fs-5 "></i></a></p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                            <img src="icon/team-4.jpg" alt="" class="bd-placeholder-img rounded-circle" width="160" height="160">
+                            <h2>Walter White</h2>
+                            <h6>Product Manager</h6>
+
+                            <p><a class="text-secondary" href="#"><i class="fab fa-facebook-f fs-5"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-whatsapp-square fs-5"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-twitter-square fs-5 "></i></a></p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+
+    </section>
+
+   <!-- Contact -->
+    <div class="container-fluid  bg-light" id="Contact">
+        <h2 class="text-center p-5">CONTACT</h2>
+        <div class="row">
+          <div class="col-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span><i class="far fa-location"></i></span>Location</p>
+            <p><a class="glyphicon glyphicon-phone"></a>01921535379</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>rabeyasriti@gmail.com</p>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6 form-group pb-3">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+              </div><br>
+              <div class="col-sm-6 form-group pb-3">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+              </div><br>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <button class="btn btn-info pull-center" type="submit">submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add Map -->
+     <div class="container-fluid p-4">
+<div class="row">
+<img src="icon/map.jpg" alt="" width="100%">
+</div>
+     </div>
+     <!-- Footer --> 
+<footer class="text-center text-lg-start" style="background-color: #0ce3eb;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Footer Content</h5>
+  
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+            voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-dark">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+   
+  
+    
+    <div class="text-center p-3 text-white" style="background-color: rgba(2, 12, 14, 0.788)">
+      © 2020 Copyright:
+      <a class="text-white " href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      <a href="#top"> <img src="icon/up.png" width="32px" style="color: azure;" text-aling="center" class="up"></a>
+    </div>
+   
+  </footer>
+  
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
